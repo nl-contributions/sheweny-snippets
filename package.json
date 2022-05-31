@@ -4,6 +4,7 @@
     "description": "Snippets for the Sheweny framework (discord bot creation)",
     "version": "0.0.2",
     "license": "MIT",
+    "icon": "images/logo.png",
     "engines": {
         "vscode": "^1.67.0"
     },
