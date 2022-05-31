@@ -3,11 +3,16 @@
     "displayName": "Sheweny Typescript Snippets",
     "description": "Snippets for the Sheweny framework (discord bot creation)",
     "version": "0.0.1",
+    "license": "MIT",
     "engines": {
         "vscode": "^1.67.0"
     },
     "author": "notryalevy <contact@notrya.fr>, Smaug#6739",
     "homepage": "https://sheweny.js.org",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nl-contributions/sheweny-typescript-snippets"
+    },
     "categories": [
         "Snippets"
     ],
