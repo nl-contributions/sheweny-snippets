@@ -1,6 +1,7 @@
 {
 	"Make an event class": {
 		"prefix": "shw:event",
+		"description": "Make an event class",
 		"body": [
 			"import { Event } from 'sheweny';",
 			"import type { ShewenyClient } from 'sheweny';",
@@ -14,17 +15,17 @@
 			"        });",
 			"    }",
 			"",
-			"    execute() {",
+			"    execute(${5:eventParameters}) {",
 			"        console.log(`Logged in as ${this.client.user!.tag}`);",
-			"        ${5:// Your Code here}",
+			"        ${6:// Your Code here}",
 			"    }",
 			"}",
 			""
-		],
-		"description": "Make an event class"
+		]
 	},
 	"Make an select menu class": {
 		"prefix": "shw:selectmenu",
+		"description": "Make an select menu class",
 		"body": [
 			"import { SelectMenu } from 'sheweny';",
 			"import type { ShewenyClient } from 'sheweny';",
@@ -41,11 +42,11 @@
 			"    }",
 			"}",
 			""
-		],
-		"description": "Make a select menu class"
+		]
 	},
 	"Make a button class": {
 		"prefix": "shw:button",
+		"description": "Make a button class",
 		"body": [
 			"import { Button } from 'sheweny';",
 			"import type { ShewenyClient } from 'sheweny';",
@@ -62,11 +63,11 @@
 			"    }",
 			"}",
 			""
-		],
-		"description": "Make a button class"
+		]
 	},
 	"Make an inhibitor class": {
 		"prefix": "shw:inhibitor",
+		"description": "Make an inhibitor class",
 		"body": [
 			"import { Inhibitor } from \"sheweny\";",
 			"import type { ShewenyClient } from \"sheweny\";",
@@ -87,11 +88,11 @@
 			"  }",
 			"};",
 			""
-		],
-		"description": "Make an inhibitor class"
+		]
 	},
 	"Make an slash command class": {
 		"prefix": "shw:slashcommand",
+		"description": "Make an slash command class",
 		"body": [
 			"import { Command } from \"sheweny\";",
 			"import type { ShewenyClient } from \"sheweny\";",
@@ -100,26 +101,26 @@
 			"export class ${1:className} extends Command {",
 			"  constructor(client: ShewenyClient) {",
 			"    super(client, {",
-			"        name: \"${2:Slash Command Name}\",",
-			"        description: \"${3:Slash Command Description}\",",
 			"        type: \"SLASH_COMMAND\",",
-			"        category: \"${4:Category}\",",
-			"        channel: \"${5:GUILD}\",",
+			"        channel: \"${2:GUILD}\",",
+			"        category: \"${3:category}\",",
+			"        name: \"${4:Command name}\",",
+			"        description: \"${5:description}\",",
 			"      }",
 			"    );",
 			"  }",
 			"",
 			"  async execute(interaction: CommandInteraction) {",
-			"    ${6:// Your code here !}",
+			"    ${6:// Your code here}",
 			"    await interaction.reply({ content: \"Pong\" });",
 			"  }",
 			"};",
 			""
-		],
-		"description": "Make an slash command class"
+		]
 	},
 	"Make a user context menu class": {
 		"prefix": "shw:user:contextmenu",
+		"description": "Make a user context menu class",
 		"body": [
 			"import { Command } from \"sheweny\";",
 			"import type { ShewenyClient } from \"sheweny\";",
@@ -128,12 +129,11 @@
 			"export class ${1:className} extends Command {",
 			"  constructor(client: ShewenyClient) {",
 			"    super(client, {",
-			"        name: \"${2:Command Name}\",",
-			"        description: \"${3:Description}\",",
 			"        type: \"CONTEXT_MENU_USER\",",
-			"        category: \"${4:Category}\",",
-			"        ",
-			"        channel: \"${5:GUILD}\",",
+			"        channel: \"${2:GUILD}\",",
+			"        category: \"${3:Category}\",",
+			"        name: \"${4:Command Name}\",",
+			"        description: \"${5:Description}\",",
 			"      }",
 			"    );",
 			"  }",
@@ -144,11 +144,11 @@
 			"  }",
 			"};",
 			""
-		],
-		"description": "Make a user context menu class"
+		]
 	},
 	"Make an message context menu class": {
 		"prefix": "shw:message:contextmenu",
+		"description": "Make an message context menu class",
 		"body": [
 			"import { Command } from \"sheweny\";",
 			"import type { ShewenyClient } from \"sheweny\";",
@@ -157,11 +157,11 @@
 			"export class ${1:className} extends Command {",
 			"  constructor(client: ShewenyClient) {",
 			"    super(client, {",
-			"        name: \"${2:Command name}\",",
-			"        description: \"${3:description}\",",
 			"        type: \"CONTEXT_MENU_MESSAGE\",",
-			"        category: \"${4:category}\",",
-			"        channel: \"${5:GUILD}\",",
+			"        channel: \"${2:GUILD}\",",
+			"        category: \"${3:category}\",",
+			"        name: \"${4:Command name}\",",
+			"        description: \"${5:description}\",",
 			"      }",
 			"    );",
 			"  }",
@@ -172,35 +172,6 @@
 			"  }",
 			"};",
 			""
-		],
-		"description": "Make an message context menu class"
-	},
-	"Make an slash command class": {
-		"prefix": "shw:slashcommand",
-		"body": [
-			"import { Command } from \"sheweny\";",
-			"import type { ShewenyClient } from \"sheweny\";",
-			"import type { ContextMenuInteraction } from \"discord.js\";",
-			"",
-			"export class ${1:className} extends Command {",
-			"  constructor(client: ShewenyClient) {",
-			"    super(client, {",
-			"        name: \"${2:Command name}\",",
-			"        description: \"${3:description}\",",
-			"        type: \"MESSAGE_COMMAND\",",
-			"        category: \"${4:category}\",",
-			"        channel: \"${5:GUILD}\",",
-			"      }",
-			"    );",
-			"  }",
-			"",
-			"  async execute(interaction: ContextMenuInteraction) {",
-			"    ${6:// Your code here}",
-			"    await interaction.reply({ content: \"Pong\" });",
-			"  }",
-			"};",
-			""
-		],
-		"description": "Make an slash command class"
+		]
 	}
 }
