@@ -1,0 +1,22 @@
+{
+    "name": "sheweny-typescript-snippets",
+    "displayName": "Sheweny Typescript Snippets",
+    "description": "Snippets for the Sheweny framework (discord bot creation)",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.67.0"
+    },
+    "author": "notryalevy <contact@notrya.fr>, Smaug#6739",
+    "homepage": "https://sheweny.js.org",
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "typescript",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
