@@ -1,8 +1,8 @@
 {
-    "name": "sheweny-typescript-snippets",
-    "displayName": "Sheweny Typescript Snippets",
+    "name": "sheweny-v3-snippets",
+    "displayName": "Sheweny V3 Snippets",
     "description": "Snippets for the Sheweny framework (discord bot creation)",
-    "version": "0.0.3",
+    "version": "0.1.0",
     "license": "MIT",
     "icon": "images/logo.png",
     "engines": {
@@ -13,7 +13,7 @@
     "homepage": "https://sheweny.js.org",
     "repository": {
         "type": "git",
-        "url": "https://github.com/nl-contributions/sheweny-typescript-snippets"
+        "url": "https://github.com/nl-contributions/sheweny-snippets"
     },
     "categories": [
         "Snippets"
@@ -22,7 +22,11 @@
         "snippets": [
             {
                 "language": "typescript",
-                "path": "./snippets/snippets.code-snippets"
+                "path": "./snippets/typescript.code-snippets"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript.code-snippets"
             }
         ]
     }

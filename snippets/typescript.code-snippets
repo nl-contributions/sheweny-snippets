@@ -1,5 +1,5 @@
 {
-	"Make an event class": {
+	"Event": {
 		"prefix": "shw:event",
 		"description": "Make an event class",
 		"body": [
@@ -23,7 +23,7 @@
 			""
 		]
 	},
-	"Make an select menu class": {
+	"SelectMenu": {
 		"prefix": "shw:selectmenu",
 		"description": "Make an select menu class",
 		"body": [
@@ -44,7 +44,7 @@
 			""
 		]
 	},
-	"Make a button class": {
+	"Button": {
 		"prefix": "shw:button",
 		"description": "Make a button class",
 		"body": [
@@ -65,7 +65,7 @@
 			""
 		]
 	},
-	"Make an inhibitor class": {
+	"Inhibitor": {
 		"prefix": "shw:inhibitor",
 		"description": "Make an inhibitor class",
 		"body": [
@@ -90,7 +90,7 @@
 			""
 		]
 	},
-	"Make an slash command class": {
+	"SlashCommand": {
 		"prefix": "shw:slashcommand",
 		"description": "Make an slash command class",
 		"body": [
@@ -118,7 +118,7 @@
 			""
 		]
 	},
-	"Make a user context menu class": {
+	"UserContextMenu": {
 		"prefix": "shw:user:contextmenu",
 		"description": "Make a user context menu class",
 		"body": [
@@ -146,7 +146,7 @@
 			""
 		]
 	},
-	"Make an message context menu class": {
+	"MessageContextMenu": {
 		"prefix": "shw:message:contextmenu",
 		"description": "Make an message context menu class",
 		"body": [
