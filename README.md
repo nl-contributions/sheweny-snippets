@@ -1,4 +1,4 @@
-# Sheweny Snippets v0.0.2
+# Sheweny Snippets v0.1.0
 
 A simple Visual Studio Code extension that allows you to quickly generate different sheweny components.
 
